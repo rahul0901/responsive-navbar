@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #ea7c7c;
+    display: flex;   /*header mai mera a tag nav aur div teeno flex hogaya ye step pe */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: larger;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    padding-right: 25px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.symbols i{
+    padding-right: 8px;
+}
+
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Adjust this value to change the initial position */
+    width: 300px; /* Adjust this value to change the menu width */
+    height: 100%;
+    padding: 10px 0px 0px;
+    background-color: #e9b6b6;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .popup-menu.open {
+    right: 0;
+  }
+
+  .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin: 8px;
+    padding: 6px 10px;
+    background: #33a866;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .popup-menu-toggle{
+    display: none;
+    color: white;
+    /* color: black; */
+    background: #33a866;
+    padding: 8px 12px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    font-size: large;
+  }
+
+  .menu-ul{
+    margin: 20px 0 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: lighter;
+  }
+  .menu-ul li{
+    list-style: none;
+    padding: 20px;
+  }
+
+  .menu-ul li a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  @media (max-width: 950px){
+    .logo{
+        font-size: xx-large;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .popup-menu-toggle{
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* section{
+    border:  2px solid black;
+}
+
+footer{
+    border:  2px solid black;
+} */
